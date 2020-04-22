@@ -23,7 +23,7 @@
 - https://www.bilibili.com/video/BV1dg4y187Y8?p=2
 
 ### 01_矩阵列空间
-- https://www.bilibili.com/video/BV1dg4y187Y8?p=2
+- https://www.bilibili.com/video/BV1dg4y187Y8?p=3
 - Description
   - In this first lecture, Professor Strang introduces the linear algebra principles critical for understanding the content of the course.  In particular, matrix-vector multiplication $Ax$ and the column space of a matrix and the rank.
 - Summary
@@ -32,7 +32,7 @@
   - $A=CR$ leads to: Row rank equals column rank
 
 ### 02_矩阵相乘和分解
-- https://www.bilibili.com/video/BV1dg4y187Y8?p=3
+- https://www.bilibili.com/video/BV1dg4y187Y8?p=4
 - Description
   - Multiplying and factoring matrices are the topics of this lecture. Professor Strang reviews multiplying columns by rows:  $AB=$ sum of rank one matrices. He also introduces the five most important factorizations.
 - Summary
