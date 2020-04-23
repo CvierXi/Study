@@ -39,5 +39,29 @@
     - $S=Q\Lambda Q^T$ from eigenvectors of a symmetric matrix $S$
     - $A=X\Lambda X^{-1}$ diagonalizes $A$ by the eigenvector matrix $X$
     - $A=U\Sigma V^T=$ (orthogonal)(diagonal)(orthogonal) = Singular Value Decomposition
-Related section in textbook: I.2
+- Related section in textbook: I.2
   - $A=CR$ leads to: Row rank equals column rank
+
+### 03_正交矩阵
+- https://www.bilibili.com/video/BV1dg4y187Y8?p=5
+- Description
+  - This lecture focuses on orthogonal matrices and subspaces. Professor Strang reviews the four fundamental subspaces: column space $C(A)$, row space $C(A^T)$, nullspace $N(A)$, left nullspace $N(A^T)$.
+- Summary
+  - Rotations
+  - Reflections
+  - Hadamard matrices
+  - Haar wavelets
+  - Discrete Fourier Transform (DFT)
+  - Complex inner product
+- Related section in textbook: I.5
+
+### 04_特征值和特征向量
+- https://www.bilibili.com/video/BV1dg4y187Y8?p=6
+- Description
+  - Professor Strang begins this lecture talking about eigenvectors and eigenvalues and why they are useful. Then he moves to a discussion of symmetric matrices, in particular, positive definite matrices.
+- Summary
+  - $Ax=\lambda x$
+  - $A^2x=\lambda^2 x$
+  - Write other vectors as combinations of eigenvectors
+  - Similar matrix $B=M^{-1}AM$ has the same eigenvalues as $A$
+- Related section in textbook: I.6
