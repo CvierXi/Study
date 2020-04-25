@@ -16,6 +16,8 @@
 
 ## 视频课程
 
+[TOC]
+
 ### 00.1_课程简介
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=1>
@@ -102,21 +104,57 @@
   - $A$ = (rotation)(stretching)(rotation) $U\Sigma V^T$ for every $A$
 - Related section in textbook: I.8
 
-### 07_主成分分析PCA：$A$的最邻近秩$k$矩阵
+### 07_$A$的最邻近秩$k$矩阵
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=9>
 - Description
-  - In this lecture, Professor Strang reviews Principal Component Analysis (PCA), which is a major tool in understanding a matrix of data. In particular, he focuses on the Eckart-Young low rank approximation theorem.
+  - A norm is a way to measure the size of a vector, a matrix, a tensor, or a function. Professor Strang reviews a variety of norms that are important to understand including S-norms, the nuclear norm, and the Frobenius norm.
 - Summary
   - $A_k=\sigma_1u_1v^T_1+\cdots+\sigma_ku_kv^T_k$
-  - $\lVert A-B_k \rVert \geqslant \lVert A-A_k \rVert$
+  - $\lVert A-B_k \rVert \geq \lVert A-A_k \rVert$
   - Norms
     - ${\lVert v \rVert}_1 = \lvert v_1 \rvert + \cdots + \lvert v_n \rvert$
     - ${\lVert v \rVert}_2 = \sqrt{{\lvert v_1 \rvert}^2 + \cdots + {\lvert v_1 \rvert}^2}$
-    - ${\lVert v \rVert}_{\infin} = \max {\lvert v_i \rvert}$
+    - ${\lVert v \rVert}_{\infty} = \max {\lvert v_i \rvert}$
     - ${\lVert A \rVert}_{Nuclear} = \sigma_1 + \cdots + \sigma_r$
     - ${\lVert A \rVert}_{Frobenius} = \sqrt{{\lvert a_{11} \rvert}^2 + {\lvert a_{12} \rvert}^2 + \cdots + {\lvert a_{mn} \rvert}^2}$
     - ${\lVert A \rVert}_2 = \sigma_1$
   - The idea of Principal Component Analysis (PCA)
-The idea of Principal Component Analysis (PCA)
 - Related section in textbook: I.9
+
+### 08_向量和矩阵的范数
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=10>
+- Description
+  - In this lecture, Professor Strang reviews Principal Component Analysis (PCA), which is a major tool in understanding a matrix of data. In particular, he focuses on the Eckart-Young low rank approximation theorem.
+- Summary
+  - ${\lVert v \rVert}_1 = \lvert v_1 \rvert + \cdots + \lvert v_n \rvert$
+  - ${\lVert v \rVert}_2 = \sqrt{{\lvert v_1 \rvert}^2 + \cdots + {\lvert v_1 \rvert}^2}$
+  - ${\lVert v \rVert}_{\infin} = \max {\lvert v_i \rvert}$
+  - ${\lVert A \rVert}_{Nuclear} = \sigma_1 + \cdots + \sigma_r$
+  - ${\lVert A \rVert}_{Frobenius} = \sqrt{{\lvert a_{11} \rvert}^2 + {\lvert a_{12} \rvert}^2 + \cdots + {\lvert a_{mn} \rvert}^2}$
+  - ${\lVert A \rVert}_2 = \sigma_1$
+- Related section in textbook: I.11
+
+### 09_最小二乘法的四种解法
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=11>
+- Description
+  - In this lecture, Professor Strang details the four ways to solve least-squares problems. Solving least-squares problems comes in to play in the many applications that rely on data fitting.
+- Summary
+  - Solve $A^TA\hat{x}=A^Tb$ to minimize $\lVert Ax-b \rVert ^2$
+  - Gram-Schmidt $A=QR$ leads to $x=R^{-1}Q^Tb$
+  - The pseudoinverse directly multiplies $b$ to give $x$
+  - The best $x$ is the limit of $(A^TA+\delta I)^{-1}A^Tb$ as $\delta \rightarrow 0$.
+- Related section in textbook: II.2
+
+### 10_&Ax=b$
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=12>
+- Description
+  - The subject of this lecture is the matrix equation $Ax=b$. Solving for $x$ presents a number of challenges that must be addressed when doing computations with large matrices.
+- Summary
+  - Large condition number $\lVert A \rVert$ $\lVert A^{-1} \rVert$
+  - $A$ is ill-conditioned and small errors are amplified.
+  - Penalty method regularizes a singular problem.
+- Related chapter in textbook: Introduction to Chapter II
