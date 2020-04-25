@@ -16,8 +16,6 @@
 
 ## 视频课程
 
-[TOC]
-
 ### 00.1_课程简介
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=1>
@@ -130,7 +128,7 @@
 - Summary
   - ${\lVert v \rVert}_1 = \lvert v_1 \rvert + \cdots + \lvert v_n \rvert$
   - ${\lVert v \rVert}_2 = \sqrt{{\lvert v_1 \rvert}^2 + \cdots + {\lvert v_1 \rvert}^2}$
-  - ${\lVert v \rVert}_{\infin} = \max {\lvert v_i \rvert}$
+  - ${\lVert v \rVert}_{\infty} = \max {\lvert v_i \rvert}$
   - ${\lVert A \rVert}_{Nuclear} = \sigma_1 + \cdots + \sigma_r$
   - ${\lVert A \rVert}_{Frobenius} = \sqrt{{\lvert a_{11} \rvert}^2 + {\lvert a_{12} \rvert}^2 + \cdots + {\lvert a_{mn} \rvert}^2}$
   - ${\lVert A \rVert}_2 = \sigma_1$
@@ -148,7 +146,7 @@
   - The best $x$ is the limit of $(A^TA+\delta I)^{-1}A^Tb$ as $\delta \rightarrow 0$.
 - Related section in textbook: II.2
 
-### 10_&Ax=b$
+### 10_$Ax=b$
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=12>
 - Description
