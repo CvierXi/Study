@@ -13,6 +13,9 @@
 - 答案：[答案](Assignments%20problem%20sets/Solutions%20to%20Exercises.pdf)
 - 介绍：
   - Linear algebra concepts are key for understanding and creating machine learning algorithms, especially as applied to deep learning and neural networks. This course reviews linear algebra with applications to probability and statistics and optimization–and above all a full explanation of deep learning.
+- 参考书
+  - Trefethen, Bau - Numerical Linear Algebra
+  - Golub, VanLoan - Matrix Computations
 
 ## 视频课程
 
@@ -156,3 +159,15 @@
   - $A$ is ill-conditioned and small errors are amplified.
   - Penalty method regularizes a singular problem.
 - Related chapter in textbook: Introduction to Chapter II
+
+### 11_最小化$\lVert x \rVert$，使得$Ax=b$
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=13>
+- Description
+  - In this lecture, Professor Strang revisits the ways to solve least squares problems. In particular, he focuses on the Gram-Schmidt process that finds orthogonal vectors.
+- Summary
+  - Picture the shortest $x$ in $\ell^1$ and $\ell^2$ and $\ell^{\infty}$ norms
+  - The $\ell^1$ norm gives a sparse solution $x$.
+  - Details of Gram-Schmidt orthogonalization and $A=QR$
+  - Orthogonal vectors in $Q$ from independent vectors in $A$
+- Related chapter in textbook: Introduction to Chapter I.11
