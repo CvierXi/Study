@@ -4,18 +4,18 @@
 
 ## 课程信息
 
-- 资源：[MIT 18.065](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/index.htm
+- 资源: [MIT 18.065](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/index.htm
 )
-- 教师：[Prof. Gilbert Strang](http://math.mit.edu/~gs/)
-- 视频：[YouTube](https://www.youtube.com/watch?v=t36jZG07MYc)
-- 教材：[教材](http://math.mit.edu/~gs/learningfromdata/)
-- 习题：[习题](Assignments%20problem%20sets/MIT18_065S18PSets.pdf)
-- 答案：[答案](Assignments%20problem%20sets/Solutions%20to%20Exercises.pdf)
-- 介绍：
+- 教师: [Prof. Gilbert Strang](http://math.mit.edu/~gs/)
+- 视频: [YouTube](https://www.youtube.com/watch?v=t36jZG07MYc)
+- 教材: [教材](http://math.mit.edu/~gs/learningfromdata/)
+- 习题: [习题](Assignments%20problem%20sets/MIT18_065S18PSets.pdf)
+- 答案: [答案](Assignments%20problem%20sets/Solutions%20to%20Exercises.pdf)
+- 介绍:
   - Linear algebra concepts are key for understanding and creating machine learning algorithms, especially as applied to deep learning and neural networks. This course reviews linear algebra with applications to probability and statistics and optimization–and above all a full explanation of deep learning.
-- 参考书
-  - Trefethen, Bau - Numerical Linear Algebra
-  - Golub, VanLoan - Matrix Computations
+- 参考书:
+  - [Trefethen, Bau - Numerical Linear Algebra](https://github.com/CvierXi/Study/blob/master/01_OpenCourse/MIT/18.065_Matrix%20Methods%20in%20Data%20Analysis%2C%20Signal%20Processing%2C%20and%20Machine%20Learning/Reference%20Books/Trefethen%2C%20Bau%20-%20Numerical%20Linear%20Algebra.pdf)
+  - [Golub, VanLoan - Matrix Computations](https://github.com/CvierXi/Study/blob/master/01_OpenCourse/MIT/18.065_Matrix%20Methods%20in%20Data%20Analysis%2C%20Signal%20Processing%2C%20and%20Machine%20Learning/Reference%20Books/Golub%2C%20VanLoan%20-%20Matrix%20Computations.pdf)
 
 ## 视频课程
 
