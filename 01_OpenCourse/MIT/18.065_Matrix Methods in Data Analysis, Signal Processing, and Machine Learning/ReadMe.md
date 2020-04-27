@@ -36,7 +36,7 @@
 - [08_向量和矩阵的范数](#08_向量和矩阵的范数)
 - [09_最小二乘法的四种解法](#09_最小二乘法的四种解法)
 - [10_$Ax=b$](#10_$Ax=b$)
-- [11_最小化||x||，使得$Ax=b$](#11_最小化||x||，使得$Ax=b$)
+- [11_最小化||$x$||，使得$Ax=b$](#11_最小化||$x$||，使得$Ax=b$)
 - [12_计算特征值和奇异值](#12_计算特征值和奇异值)
 
 ### 00.1_课程简介
@@ -180,7 +180,7 @@
   - Penalty method regularizes a singular problem.
 - Related chapter in textbook: Introduction to Chapter II
 
-### 11_最小化||x||，使得$Ax=b$
+### 11_最小化||$x$||，使得$Ax=b$
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=13>
 - Description
