@@ -1,7 +1,9 @@
+<!-- omit in toc -->
 # Matrix Methods in Data Analysis, Signal Processing, and Machine Learning
 
 ![图片](./images/Relationship.jpg)
 
+<!-- omit in toc -->
 ## 课程信息
 
 - 资源: [MIT 18.065](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/index.htm
@@ -16,11 +18,14 @@
 - 参考书:
   - [Trefethen, Bau - Numerical Linear Algebra](https://github.com/CvierXi/Study/blob/master/01_OpenCourse/MIT/18.065_Matrix%20Methods%20in%20Data%20Analysis%2C%20Signal%20Processing%2C%20and%20Machine%20Learning/Reference%20Books/Trefethen%2C%20Bau%20-%20Numerical%20Linear%20Algebra.pdf)
   - [Golub, VanLoan - Matrix Computations](https://github.com/CvierXi/Study/blob/master/01_OpenCourse/MIT/18.065_Matrix%20Methods%20in%20Data%20Analysis%2C%20Signal%20Processing%2C%20and%20Machine%20Learning/Reference%20Books/Golub%2C%20VanLoan%20-%20Matrix%20Computations.pdf)
+- 其他:
+  - Chrome浏览器需要安装[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related)插件以正确显示公式.  
 
+<!-- omit in toc -->
 ## 视频课程
 
 - [00.1_课程简介](#001_课程简介)
-- [00.2_采访](#00.2_采访)
+- [00.2_采访](#002_采访)
 - [01_矩阵列空间](#01_矩阵列空间)
 - [02_矩阵相乘和分解](#02_矩阵相乘和分解)
 - [03_正交矩阵](#03_正交矩阵)
