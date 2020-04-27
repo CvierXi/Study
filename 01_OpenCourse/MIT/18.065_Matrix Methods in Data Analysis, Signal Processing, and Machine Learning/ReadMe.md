@@ -19,6 +19,21 @@
 
 ## 视频课程
 
+- [00.1_课程简介](#001_课程简介)
+- [00.2_采访](#00.2_采访)
+- [01_矩阵列空间](#01_矩阵列空间)
+- [02_矩阵相乘和分解](#02_矩阵相乘和分解)
+- [03_正交矩阵](#03_正交矩阵)
+- [04_特征值和特征向量](#04_特征值和特征向量)
+- [05_正定和半正定矩阵](#05_正定和半正定矩阵)
+- [06_奇异值分解SVD](#06_奇异值分解SVD)
+- [07_$A$的最邻近秩$k$矩阵](#07_$A$的最邻近秩$k$矩阵)
+- [08_向量和矩阵的范数](#08_向量和矩阵的范数)
+- [09_最小二乘法的四种解法](#09_最小二乘法的四种解法)
+- [10_$Ax=b$](#10_$Ax=b$)
+- [11_最小化||x||，使得$Ax=b$](#11_最小化||x||，使得$Ax=b$)
+- [12_计算特征值和奇异值](#12_计算特征值和奇异值)
+
 ### 00.1_课程简介
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=1>
@@ -160,7 +175,7 @@
   - Penalty method regularizes a singular problem.
 - Related chapter in textbook: Introduction to Chapter II
 
-### 11_最小化$\lVert x \rVert$，使得$Ax=b$
+### 11_最小化||x||，使得$Ax=b$
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=13>
 - Description
@@ -171,3 +186,15 @@
   - Details of Gram-Schmidt orthogonalization and $A=QR$
   - Orthogonal vectors in $Q$ from independent vectors in $A$
 - Related chapter in textbook: Introduction to Chapter I.11
+
+### 12_计算特征值和奇异值
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=14>
+- Description
+  - Numerical linear algebra is the subject of this lecture and, in particular, how to compute eigenvalues and singular values. This includes discussion of the Hessenberg matrix, a square matrix that is almost (except for one extra diagonal) triangular.
+- Summary
+  - $QR$ method for eigenvalues: Reverse $A=QR$ to $A_1=RQ$
+  - Then reverse $A_1=Q_1R_1$ to $A_2=R_1Q_1$: Include shifts
+  - $A$'s become triangular with eigenvalues on the diagonal.
+  - Krylov spaces and Krylov iterations
+- Related chapter in textbook: Introduction to Chapter II.1
