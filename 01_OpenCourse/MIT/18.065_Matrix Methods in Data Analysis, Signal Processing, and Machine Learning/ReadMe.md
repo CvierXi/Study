@@ -36,8 +36,9 @@
 - [08_向量和矩阵的范数](#08_向量和矩阵的范数)
 - [09_最小二乘法的四种解法](#09_最小二乘法的四种解法)
 - [10_$Ax=b$](#10_$Ax=b$)
-- [11_最小化||$x$||，使得$Ax=b$](#11_最小化||$x$||，使得$Ax=b$)
+- [11_最小化$\lVert x \rVert$，使得$Ax=b$](#11%e6%9c%80%e5%b0%8f%e5%8c%96lvert-x-rvert%e4%bd%bf%e5%be%97axb)
 - [12_计算特征值和奇异值](#12_计算特征值和奇异值)
+- [13_矩阵相乘的随机抽样](#13%e7%9f%a9%e9%98%b5%e7%9b%b8%e4%b9%98%e7%9a%84%e9%9a%8f%e6%9c%ba%e6%8a%bd%e6%a0%b7)
 
 ### 00.1_课程简介
 
@@ -180,7 +181,7 @@
   - Penalty method regularizes a singular problem.
 - Related chapter in textbook: Introduction to Chapter II
 
-### 11_最小化||$x$||，使得$Ax=b$
+### 11_最小化$\lVert x \rVert$，使得$Ax=b$
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=13>
 - Description
@@ -203,3 +204,15 @@
   - $A$'s become triangular with eigenvalues on the diagonal.
   - Krylov spaces and Krylov iterations
 - Related chapter in textbook: Introduction to Chapter II.1
+
+### 13_矩阵相乘的随机抽样
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=15>
+- Description
+  - This lecture focuses on randomized linear algebra, specifically on randomized matrix multiplication. This process is useful when working with very large matrices. Professor Strang introduces and describes the basic steps of randomized computations.
+- Summary
+  - Sample a few columns of $A$ and rows of $B$
+  - Use probabilities proportional to lengths $\lVert A_i \rVert$ $\lVert B_i \rVert$
+  - See the key ideas of probability: Mean and Variance
+  - Mean $=AB$ (correct) and variance to be minimized
+- Related chapter in textbook: Introduction to Chapter II.4
