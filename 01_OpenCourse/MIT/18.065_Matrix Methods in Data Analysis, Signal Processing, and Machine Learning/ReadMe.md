@@ -31,14 +31,14 @@
 - [03_正交矩阵](#03_正交矩阵)
 - [04_特征值和特征向量](#04_特征值和特征向量)
 - [05_正定和半正定矩阵](#05_正定和半正定矩阵)
-- [06_奇异值分解SVD](#06_奇异值分解SVD)
-- [07_$A$的最邻近秩$k$矩阵](#07_$A$的最邻近秩$k$矩阵)
+- [06_奇异值分解SVD](#06_奇异值分解svd)
+- [07_$A$的最邻近秩$k$矩阵](#07_math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmiamimrowannotation-encodingapplicationx-texaannotationsemanticsmatha的最邻近秩math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmikmimrowannotation-encodingapplicationx-texkannotationsemanticsmathk矩阵)
 - [08_向量和矩阵的范数](#08_向量和矩阵的范数)
 - [09_最小二乘法的四种解法](#09_最小二乘法的四种解法)
-- [10_$Ax=b$](#10_$Ax=b$)
-- [11_最小化$\lVert x \rVert$，使得$Ax=b$](#11%e6%9c%80%e5%b0%8f%e5%8c%96lvert-x-rvert%e4%bd%bf%e5%be%97axb)
+- [10_$Ax=b$](#10_math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmiamimixmimomomibmimrowannotation-encodingapplicationx-texaxbannotationsemanticsmathaxb)
+- [11_最小化$\lVert x \rVert$，使得$Ax=b$](#11_最小化math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmo-stretchyfalsemomixmimo-stretchyfalsemomrowannotation-encodingapplicationx-texlvert-x-rvertannotationsemanticsmathx使得math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmiamimixmimomomibmimrowannotation-encodingapplicationx-texaxbannotationsemanticsmathaxb)
 - [12_计算特征值和奇异值](#12_计算特征值和奇异值)
-- [13_矩阵相乘的随机抽样](#13%e7%9f%a9%e9%98%b5%e7%9b%b8%e4%b9%98%e7%9a%84%e9%9a%8f%e6%9c%ba%e6%8a%bd%e6%a0%b7)
+- [13_矩阵相乘的随机抽样](#13_矩阵相乘的随机抽样)
 
 ### 00.1_课程简介
 
