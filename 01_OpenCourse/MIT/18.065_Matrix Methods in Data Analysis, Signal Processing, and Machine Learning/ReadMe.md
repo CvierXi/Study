@@ -32,11 +32,11 @@
 - [04_特征值和特征向量](#04_特征值和特征向量)
 - [05_正定和半正定矩阵](#05_正定和半正定矩阵)
 - [06_奇异值分解SVD](#06_奇异值分解svd)
-- [07_$A$的最邻近秩$k$矩阵](#07_math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmiamimrowannotation-encodingapplicationx-texaannotationsemanticsmatha的最邻近秩math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmikmimrowannotation-encodingapplicationx-texkannotationsemanticsmathk矩阵)
+- [07_A的最邻近秩k矩阵](#07_a的最邻近秩k矩阵)
 - [08_向量和矩阵的范数](#08_向量和矩阵的范数)
 - [09_最小二乘法的四种解法](#09_最小二乘法的四种解法)
-- [10_$Ax=b$](#10_math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmiamimixmimomomibmimrowannotation-encodingapplicationx-texaxbannotationsemanticsmathaxb)
-- [11_最小化$\lVert x \rVert$，使得$Ax=b$](#11_最小化math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmo-stretchyfalsemomixmimo-stretchyfalsemomrowannotation-encodingapplicationx-texlvert-x-rvertannotationsemanticsmathx使得math-xmlnshttpwwww3org1998mathmathmlsemanticsmrowmiamimixmimomomibmimrowannotation-encodingapplicationx-texaxbannotationsemanticsmathaxb)
+- [10_Ax=b](#10_axb)
+- [11_最小化||x||，使得Ax=b](#11_最小化x使得axb)
 - [12_计算特征值和奇异值](#12_计算特征值和奇异值)
 - [13_矩阵相乘的随机抽样](#13_矩阵相乘的随机抽样)
 
@@ -126,7 +126,7 @@
   - $A$ = (rotation)(stretching)(rotation) $U\Sigma V^T$ for every $A$
 - Related section in textbook: I.8
 
-### 07_$A$的最邻近秩$k$矩阵
+### 07_A的最邻近秩k矩阵
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=9>
 - Description
@@ -170,7 +170,7 @@
   - The best $x$ is the limit of $(A^TA+\delta I)^{-1}A^Tb$ as $\delta \rightarrow 0$.
 - Related section in textbook: II.2
 
-### 10_$Ax=b$
+### 10_Ax=b
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=12>
 - Description
@@ -181,7 +181,7 @@
   - Penalty method regularizes a singular problem.
 - Related chapter in textbook: Introduction to Chapter II
 
-### 11_最小化$\lVert x \rVert$，使得$Ax=b$
+### 11_最小化||x||，使得Ax=b
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=13>
 - Description
