@@ -39,6 +39,13 @@
 - [11_最小化||x||，使得Ax=b](#11_最小化x使得axb)
 - [12_计算特征值和奇异值](#12_计算特征值和奇异值)
 - [13_矩阵相乘的随机抽样](#13_矩阵相乘的随机抽样)
+- [14_发生低秩改变后的矩阵A及其逆](#14_发生低秩改变后的矩阵a及其逆)
+- [15_A(t)的特征值关于t的导数](#15_at的特征值关于t的导数)
+- [16_A(t)的逆和奇异值关于t的导数](#16_at的逆和奇异值关于t的导数)
+- [17_Prof Alex: 数值计算中的低秩矩阵](#17_prof-alex-数值计算中的低秩矩阵)
+- [18_SVD, LU, QR分解的自由度计算，鞍点](#18_svd-lu-qr分解的自由度计算鞍点)
+- [19_鞍点](#19_鞍点)
+- [20_Markov不等式，Chebyshev不等式，协方差矩阵](#20_markov不等式chebyshev不等式协方差矩阵)
 
 ### 00.1_课程简介
 
@@ -216,3 +223,88 @@
   - See the key ideas of probability: Mean and Variance
   - Mean $=AB$ (correct) and variance to be minimized
 - Related chapter in textbook: Introduction to Chapter II.4
+
+### 14_发生低秩改变后的矩阵A及其逆
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=16>
+- Description
+  - In this lecture, Professor Strang introduces the concept of low rank matrices. He demonstrates how using the Sherman-Morrison-Woodbury formula is useful to efficiently compute how small changes in a matrix affect its inverse.
+- Summary
+  - If $A$ is changed by a rank-one matrix, so is its inverse.
+  - Woodbury-Morrison formula for those changes
+  - New data in least squares will produce these changes.
+  - Avoid recomputing over again with all data
+  - Note: Formula in class is correct in the textbook.
+- Related chapter in textbook: Introduction to Chapter III.1
+
+### 15_A(t)的特征值关于t的导数
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=17>
+- Description
+  - This lecture is about changes in eigenvalues and changes in singular values. When matrices move, their inverses, their eigenvalues, and their singular values change. Professor Strang explores the resulting formulas.
+- Summary
+  - Matrices $A$ depending on $t$ /Derivative $=dA/dt$
+  - $\cfrac{d\lambda}{dt}=y^T\cfrac{dA}{dt}x$, $x$ = eigenvector, $y$ = eigenvector of transpose of $A$
+  - Eigenvalues from adding rank-one matrix are interlaced.
+- Related chapter in textbook: Introduction to Chapter III.1-2
+
+### 16_A(t)的逆和奇异值关于t的导数
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=18>
+- Description
+  - In this lecture, Professor Strang reviews how to find the derivatives of inverse and singular values. Later in the lecture, he discusses LASSO optimization, the nuclear norm, matrix completion, and compressed sensing.
+- Summary
+  - $\cfrac{dA^2}{dt}=A\cfrac{dA}{dt} + \cfrac{dA}{dt}A$, NOT $2A\cfrac{dA}{dt}$
+  - $\cfrac{dA^{-1}}{dt}=-A^{-1}\cfrac{dA}{dt}A^{-1}$
+  - $\cfrac{d\sigma}{dt}=u^T\cfrac{dA}{dt}v$
+  - Interlacing of eigenvalues / Weyl inequalities
+- Related chapter in textbook: Introduction to Chapter III.1-2
+
+### 17_Prof Alex: 数值计算中的低秩矩阵
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=19>
+- Description
+  - Professor Alex Townsend gives this guest lecture answering the question “Why are there so many low rank matrices that appear in computational math?” Working effectively with low rank matrices is critical in image compression applications.
+- Summary
+  - Professor Alex Townsend's lecture
+  - Why do so many matrices have low effective rank?
+  - Sylvester test for rapid decay of singular values
+  - Image compression: Rank $k$ needs only $2kn$ numbers.
+  - Flags give many examples / diagonal lines give high rank.
+- Related chapter in textbook: Introduction to Chapter III.3
+
+### 18_SVD, LU, QR分解的自由度计算，鞍点
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=20>
+- Description
+  - In this lecture, Professor Strang reviews counting the free parameters in a variety of key matrices. He then moves on to finding saddle points from constraints and Lagrange multipliers.
+- Summary
+  - Find $n^2$ parameters in $L$ and $U$, $Q$ and $R$, ...
+  - Find $(m+n-r)r$ parameters in a matrix of rank $r$
+  - Find saddle points from constraints and Lagrange multipliers
+- Related chapter in textbook: Introduction to Chapter III.2
+
+### 19_鞍点
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=21>
+- Description
+  - Professor Strang continues his discussion of saddle points, which are critical for deep learning applications. Later in the lecture, he reviews the Maxmin Principle, a decision rule used in probability and statistics to optimize outcomes.
+- Summary
+  - $\cfrac{x^TSx}{x^Tx}$ has a saddle at eigenvalues between lowest / highest.
+  - (Max over all $k$-dim spaces) of (Min of $\cfrac{x^TSx}{x^Tx}$) = evalue
+  - Sample mean and expected mean
+  - Sample variance and $k^{th}$ eigenvalue variance
+- Related chapter in textbook: Introduction to Chapter III.2 and V.1
+
+### 20_Markov不等式，Chebyshev不等式，协方差矩阵
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=22>
+- Description
+  - This lecture continues the focus on probability, which is critical for working with large sets of data. Topics include sample mean, expected mean, sample variance, covariance matrices, Chebyshev's inequality, and Markov's inequality.
+- Summary
+  - $E[x]=m=$ average outcome weighted by probabilities
+  - $E$ uses expected outcomes not actual sample outcomes.
+  - $E[(x-m)^2]=E[x^2]-m^2$ is the variance of $x$.
+  - Markov's inequality $Prob[x\geq a] \leq \cfrac{\bar{X}}{a}$ (when all $x$'s $\geq$ 0)
+  - Chebyshev's inequality $Prob[|x-m|\geq a] \leq \cfrac{\sigma^2}{a^2}$
+- Related chapter in textbook: Introduction to Chapter V.1, V.3
