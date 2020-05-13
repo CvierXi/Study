@@ -45,7 +45,9 @@
 - [17_Prof Alex: 数值计算中的低秩矩阵](#17_prof-alex-数值计算中的低秩矩阵)
 - [18_SVD, LU, QR分解的自由度计算，鞍点](#18_svd-lu-qr分解的自由度计算鞍点)
 - [19_鞍点](#19_鞍点)
-- [20_Markov不等式，Chebyshev不等式，协方差矩阵](#20_markov不等式chebyshev不等式协方差矩阵)
+- [20_均值，方差，协方差](#20_均值方差协方差)
+- [21_凸优化](#21_凸优化)
+- [22_梯度下降法](#22_梯度下降法)
 
 ### 00.1_课程简介
 
@@ -296,7 +298,7 @@
   - Sample variance and $k^{th}$ eigenvalue variance
 - Related chapter in textbook: Introduction to Chapter III.2 and V.1
 
-### 20_Markov不等式，Chebyshev不等式，协方差矩阵
+### 20_均值，方差，协方差
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=22>
 - Description
@@ -308,3 +310,27 @@
   - Markov's inequality $Prob[x\geq a] \leq \cfrac{\bar{X}}{a}$ (when all $x$'s $\geq$ 0)
   - Chebyshev's inequality $Prob[|x-m|\geq a] \leq \cfrac{\sigma^2}{a^2}$
 - Related chapter in textbook: Introduction to Chapter V.1, V.3
+
+### 21_凸优化
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=23>
+- Description
+  - In this lecture, Professor Strang discusses optimization, the fundamental algorithm that goes into deep learning. Later in the lecture he reviews the structure of convolutional neural networks (CNN) used in analyzing visual imagery.
+- Summary
+  - Three terms of a Taylor series of $F(x)$: many variables $x$
+  - Downhill direction decided by first partial derivatives of $F$ at $x$
+  - Newton's method uses higher derivatives (Hessian at higher cost).
+- Related chapter in textbook: Introduction to Chapter VI.1, VI.4
+
+### 22_梯度下降法
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=24>
+- Description
+  - Gradient descent is the most common optimization algorithm in deep learning and machine learning. It only takes into account the first derivative when performing updates on parameters—the stepwise process that moves downhill to reach a local minimum.
+- Summary
+  - Gradient descent: Downhill from \(x\) to new \(X = x - s (\partial F / \partial x)\)
+  - Excellent example: \(F(x,y) = \frac{1}{2} (x^2 + by^2)\)
+  - If \(b\) is small we take a zig-zag path toward (0, 0).
+  - Each step multiplies by \((b - 1)/(b + 1)\)
+  - Remarkable function: logarithm of determinant of \(X\)
+- Related chapter in textbook: Introduction to Chapter VI.4
