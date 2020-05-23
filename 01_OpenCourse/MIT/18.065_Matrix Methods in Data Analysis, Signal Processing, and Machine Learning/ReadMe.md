@@ -48,6 +48,12 @@
 - [20_均值，方差，协方差](#20_均值方差协方差)
 - [21_凸优化](#21_凸优化)
 - [22_梯度下降法](#22_梯度下降法)
+- [23_加速梯度下降法](#23_加速梯度下降法)
+- [24_线性规划](#24_线性规划)
+- [25_随机梯度下降法](#25_随机梯度下降法)
+- [26_神经网络结构](#26_神经网络结构)
+- [27_反向传播](#27_反向传播)
+- [30_循环矩阵](#30_循环矩阵)
 
 ### 00.1_课程简介
 
@@ -200,7 +206,7 @@
   - The $\ell^1$ norm gives a sparse solution $x$.
   - Details of Gram-Schmidt orthogonalization and $A=QR$
   - Orthogonal vectors in $Q$ from independent vectors in $A$
-- Related chapter in textbook: Introduction to Chapter I.11
+- Related chapter in textbook: Chapter I.11
 
 ### 12_计算特征值和奇异值
 
@@ -212,7 +218,7 @@
   - Then reverse $A_1=Q_1R_1$ to $A_2=R_1Q_1$: Include shifts
   - $A$'s become triangular with eigenvalues on the diagonal.
   - Krylov spaces and Krylov iterations
-- Related chapter in textbook: Introduction to Chapter II.1
+- Related chapter in textbook: Chapter II.1
 
 ### 13_矩阵相乘的随机抽样
 
@@ -224,7 +230,7 @@
   - Use probabilities proportional to lengths $\lVert A_i \rVert$ $\lVert B_i \rVert$
   - See the key ideas of probability: Mean and Variance
   - Mean $=AB$ (correct) and variance to be minimized
-- Related chapter in textbook: Introduction to Chapter II.4
+- Related chapter in textbook: Chapter II.4
 
 ### 14_发生低秩改变后的矩阵A及其逆
 
@@ -237,7 +243,7 @@
   - New data in least squares will produce these changes.
   - Avoid recomputing over again with all data
   - Note: Formula in class is correct in the textbook.
-- Related chapter in textbook: Introduction to Chapter III.1
+- Related chapter in textbook: Chapter III.1
 
 ### 15_A(t)的特征值关于t的导数
 
@@ -248,7 +254,7 @@
   - Matrices $A$ depending on $t$ /Derivative $=dA/dt$
   - $\cfrac{d\lambda}{dt}=y^T\cfrac{dA}{dt}x$, $x$ = eigenvector, $y$ = eigenvector of transpose of $A$
   - Eigenvalues from adding rank-one matrix are interlaced.
-- Related chapter in textbook: Introduction to Chapter III.1-2
+- Related chapter in textbook: Chapter III.1-2
 
 ### 16_A(t)的逆和奇异值关于t的导数
 
@@ -260,7 +266,7 @@
   - $\cfrac{dA^{-1}}{dt}=-A^{-1}\cfrac{dA}{dt}A^{-1}$
   - $\cfrac{d\sigma}{dt}=u^T\cfrac{dA}{dt}v$
   - Interlacing of eigenvalues / Weyl inequalities
-- Related chapter in textbook: Introduction to Chapter III.1-2
+- Related chapter in textbook: Chapter III.1-2
 
 ### 17_Prof Alex: 数值计算中的低秩矩阵
 
@@ -273,7 +279,7 @@
   - Sylvester test for rapid decay of singular values
   - Image compression: Rank $k$ needs only $2kn$ numbers.
   - Flags give many examples / diagonal lines give high rank.
-- Related chapter in textbook: Introduction to Chapter III.3
+- Related chapter in textbook: Chapter III.3
 
 ### 18_SVD, LU, QR分解的自由度计算，鞍点
 
@@ -284,7 +290,7 @@
   - Find $n^2$ parameters in $L$ and $U$, $Q$ and $R$, ...
   - Find $(m+n-r)r$ parameters in a matrix of rank $r$
   - Find saddle points from constraints and Lagrange multipliers
-- Related chapter in textbook: Introduction to Chapter III.2
+- Related chapter in textbook: Chapter III.2
 
 ### 19_鞍点
 
@@ -296,7 +302,7 @@
   - (Max over all $k$-dim spaces) of (Min of $\cfrac{x^TSx}{x^Tx}$) = evalue
   - Sample mean and expected mean
   - Sample variance and $k^{th}$ eigenvalue variance
-- Related chapter in textbook: Introduction to Chapter III.2 and V.1
+- Related chapter in textbook: Chapter III.2 and V.1
 
 ### 20_均值，方差，协方差
 
@@ -309,7 +315,7 @@
   - $E[(x-m)^2]=E[x^2]-m^2$ is the variance of $x$.
   - Markov's inequality $Prob[x\geq a] \leq \cfrac{\bar{X}}{a}$ (when all $x$'s $\geq$ 0)
   - Chebyshev's inequality $Prob[|x-m|\geq a] \leq \cfrac{\sigma^2}{a^2}$
-- Related chapter in textbook: Introduction to Chapter V.1, V.3
+- Related chapter in textbook: Chapter V.1, V.3
 
 ### 21_凸优化
 
@@ -320,7 +326,7 @@
   - Three terms of a Taylor series of $F(x)$: many variables $x$
   - Downhill direction decided by first partial derivatives of $F$ at $x$
   - Newton's method uses higher derivatives (Hessian at higher cost).
-- Related chapter in textbook: Introduction to Chapter VI.1, VI.4
+- Related chapter in textbook: Chapter VI.1, VI.4
 
 ### 22_梯度下降法
 
@@ -333,4 +339,79 @@
   - If \(b\) is small we take a zig-zag path toward (0, 0).
   - Each step multiplies by \((b - 1)/(b + 1)\)
   - Remarkable function: logarithm of determinant of \(X\)
-- Related chapter in textbook: Introduction to Chapter VI.4
+- Related chapter in textbook: Chapter VI.4
+  
+### 23_加速梯度下降法
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=25>
+- Description
+  - In this lecture, Professor Strang explains both momentum-based gradient descent and Nesterov's accelerated gradient descent.
+- Summary
+  - Study the zig-zag example: Minimize $F=\cfrac{1}{2}(x^2 + by^2)$
+  - Add a momentum term / heavy ball remembers its directions.
+  - New point $k+1$ comes from TWO old points $k$ and $k-1$.
+  - "1st order" becomes "2nd order" or "1st order system" as in ODEs.
+  - Convergence rate improves: $1-b$ to $1-\sqrt{b}$!
+- Related chapter in textbook: Chapter VI.4
+
+### 24_线性规划
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=26>
+- Description
+  - This lecture focuses on several topics that are specific parts of optimization. These include linear programming (LP), the max-flow min-cut theorem, two-person zero-sum games, and duality.
+- Summary
+  - **Linear program**: Minimize cost subject to $Ax=b$ and $x>0$
+  - Inequalities make the problem piecewise linear.
+  - Simplex method reduces cost from corner point to corner point.
+  - Dual linear program is a maximization: Max = Min!
+  - **Game**: $X$ chooses rows of payoff matrix, $Y$ chooses columns.
+- Related chapter in textbook: Chapter VI.2–VI.3
+  
+### 25_随机梯度下降法
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=27>
+- Description
+  - Professor Suvrit Sra gives this guest lecture on stochastic gradient descent (SGD), which randomly selects a minibatch of data at each step. The SGD is still the primary method for training large-scale machine learning systems.
+- Summary
+  - Full gradient descent uses all data in each step.
+  - Stochastic method uses a minibatch of data (often 1 sample!).
+  - Each step is much faster and the descent starts well.
+  - Later the points bounce around / time to stop!
+  - This method is the favorite for weights in deep learning.
+- Related chapter in textbook: Chapter VI.6
+
+### 26_神经网络结构
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=28>
+- Description
+  - This lecture is about the central structure of deep neural networks, which are a major force in machine learning. The aim is to find the function that’s constructed to learn the training data and then apply it to the test data.
+- Summary
+  - The net has layers of nodes. Layer zero is the data.
+  - We choose matrix of "weights" from layer to layer.
+  - Nonlinear step at each layer! Negative values become zero!
+  - We know correct class for the training data.
+  - Weights optimized to (usually) output that correct class.
+- Related chapter in textbook: Chapter VII.1
+
+### 27_反向传播
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=29>
+- Description
+  - In this lecture, Professor Strang presents Professor Sra’s theorem which proves the convergence of stochastic gradient descent (SGD). He then reviews backpropagation, a method to compute derivatives quickly, using the chain rule.
+- Summary
+  - Computational graph: Each step in computing $F(x)$ from the weights
+  - Derivative of each step + chain rule gives gradient of $F$.
+  - Reverse mode: Backwards from output to input
+  - The key step to optimizing weights is backprop + stoch grad descent.
+- Related chapter in textbook: Chapter VII.3
+
+### 30_循环矩阵
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=30>
+- Description
+  - Which matrices can be completed to have rank = 1?
+  - Perfect answer: No cycles in a certain graph
+  - Cyclic permutation $P$ and circulant matrices
+  - $c_0I + c_1P + c_2P^2 + \cdots$
+  - Start of Fourier analysis for vectors
+- Related section in textbook: IV.8 and IV.2
