@@ -54,6 +54,7 @@
 - [26_神经网络结构](#26_神经网络结构)
 - [27_反向传播](#27_反向传播)
 - [30_循环矩阵](#30_循环矩阵)
+- [31_循环矩阵的特征向量，Fourier矩阵](#31_循环矩阵的特征向量fourier矩阵)
 
 ### 00.1_课程简介
 
@@ -409,9 +410,24 @@
 
 - <https://www.bilibili.com/video/BV1dg4y187Y8?p=30>
 - Description
+  - Professor Strang starts this lecture asking the question “Which matrices can be completed to have a rank of 1?” He then provides several examples. In the second part, he introduces convolution and cyclic convolution.
+- Summary
   - Which matrices can be completed to have rank = 1?
   - Perfect answer: No cycles in a certain graph
   - Cyclic permutation $P$ and circulant matrices
   - $c_0I + c_1P + c_2P^2 + \cdots$
   - Start of Fourier analysis for vectors
 - Related section in textbook: IV.8 and IV.2
+
+### 31_循环矩阵的特征向量，Fourier矩阵
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=31>
+- Description
+  - This lecture continues with constant-diagonal circulant matrices. Each lower diagonal continues on an upper diagonal to produce $n$ equal entries. The eigenvectors are always the columns of the Fourier matrix and computing is fast.
+- Summary
+  - Circulants $C$ have $n$ constant diagonals (completed cyclically).
+  - Cyclic convolution with $c_0, \cdots, c_{n-1}$ multiplication by $C$
+  - Linear shift invariant: LSI for periodic problems
+  - Eigenvectors of every $C$ columns of the Fourier matrix
+  - Eigenvalues of $C$ (Fourier matrix)(column zero of $C$)
+- Related section in textbook: IV.2
