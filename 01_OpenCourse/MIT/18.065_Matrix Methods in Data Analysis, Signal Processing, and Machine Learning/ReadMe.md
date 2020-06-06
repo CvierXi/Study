@@ -55,6 +55,11 @@
 - [27_反向传播](#27_反向传播)
 - [30_循环矩阵](#30_循环矩阵)
 - [31_循环矩阵的特征向量，Fourier矩阵](#31_循环矩阵的特征向量fourier矩阵)
+- [32_卷积](#32_卷积)
+- [33_神经网络](#33_神经网络)
+- [34_Procrustes问题](#34_procrustes问题)
+- [35_Graph聚类](#35_graph聚类)
+- [36_Julia，自动求导](#36_julia自动求导)
 
 ### 00.1_课程简介
 
@@ -366,7 +371,7 @@
   - Simplex method reduces cost from corner point to corner point.
   - Dual linear program is a maximization: Max = Min!
   - **Game**: $X$ chooses rows of payoff matrix, $Y$ chooses columns.
-- Related chapter in textbook: Chapter VI.2–VI.3
+- Related chapters in textbook: Chapter VI.2–VI.3
   
 ### 25_随机梯度下降法
 
@@ -417,7 +422,7 @@
   - Cyclic permutation $P$ and circulant matrices
   - $c_0I + c_1P + c_2P^2 + \cdots$
   - Start of Fourier analysis for vectors
-- Related section in textbook: IV.8 and IV.2
+- Related sections in textbook: IV.8 and IV.2
 
 ### 31_循环矩阵的特征向量，Fourier矩阵
 
@@ -431,3 +436,64 @@
   - Eigenvectors of every $C$ columns of the Fourier matrix
   - Eigenvalues of $C$ (Fourier matrix)(column zero of $C$)
 - Related section in textbook: IV.2
+
+### 32_卷积
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=32>
+- Description
+  - Professor Strang begins the lecture talking about ImageNet, a large visual database used in visual object recognition software research. ImageNet is an example of a convolutional neural network (CNN). The rest of the lecture focuses on convolution.
+- Summary
+  - Convolution matrices have $\leq n$ parameters (not $n^2$).
+  - Fewer weights to compute in deep learning
+  - Component $k$ from convolution $c*d$: Add all $c(j)d(k-j)$
+  - Convolution Rule: $F(c*d)=Fc$ times $Fd$ (component by component)
+  - $F$ = Fourier matrix with $j,k$ entry $=exp(2\pi ijk/n)$
+- Related section in textbook: IV.2
+
+### 33_神经网络
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=33>
+- Description
+  - This lecture focuses on the construction of the learning function F, which is optimized by stochastic gradient descent and applied to the training data to minimize the loss. Professor Strang also begins his review of distance matrices.
+- Summary
+  - Each training sample is given by a vector $v$.
+  - Next layer of the net is $F_1(v)$ = ReLU$(A_1v+b_1)$.
+  - $w_1=A_1v+b_1$ with optimized weights in $A_1$ and $b_1$
+  - ReLU($w$) = nonlinear activation function $\max(0,w)$
+  - Minimize loss function by optimizing weights $x$'s = $A$'s and $b$'s
+  - Distance matrix given between points: Find the points!
+- Related sections in textbook: VII.1 and IV.10
+
+### 34_Procrustes问题
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=34>
+- Description
+  - This lecture continues the review of distance matrices. Professor Strang then introduces the Procrustes problem, which looks for the orthogonal matrix that swings one set of vectors as nearly as possible onto a second set.
+- Summary
+  - Distance problem: Find positions \(x\) from distances between them.
+  - Necessary and sufficient: Distances satisfy triangle inequality.
+  - Procrustes: Given \(n\) vectors \(x\) and \(n\) vectors \(y\).
+  - Find the orthogonal matrix \(Q\) so that \(Qx\)'s are closest to \(y\)'s.
+- Related sections in textbook: IV.9 and IV.10
+
+### 35_Graph聚类
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=35>
+- Description
+  - The topic of this lecture is clustering for graphs, meaning finding sets of “related” vertices in graphs. The challenge is finding good algorithms to optimize cluster quality. Professor Strang reviews some possibilities.
+- Summary
+  - Two ways to separate graph nodes into clusters
+    - k-means: Choose clusters, choose centroids, choose clusters, ...
+    - Fiedler vector: Eigenvector of graph Laplacian: \(+-\) signs give 2 clusters
+- Related sections in textbook: IV.6–IV.7
+
+### 36_Julia，自动求导
+
+- <https://www.bilibili.com/video/BV1dg4y187Y8?p=36>
+- Description
+  - Professor Alan Edelman gives this guest lecture on the Julia Language, which was designed for high-performance computing. He provides an overview of how Julia can be used in machine learning and deep learning applications.
+- Summary
+  - Automatic differentiation of each operation in Julia
+  - Key to deep learning: Optimizing many weights
+  - Speed and simplicity: Computing derivatives and Jacobian matrices
+- Related sections in textbook: III.3 and VII.2
